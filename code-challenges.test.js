@@ -58,13 +58,11 @@ const letterE = "e"
 
 describe("letterContainer", () => {
     it("takes in an array of words and returns and array of words containing the particular letter.", () => {
-    expect(letterContainer(letterA)).toEqual(expect.arrayContaining(["Mango", "Apricot", "Peach"]))
-    expect(letterContainer(letterE)).toEqual(expect.arrayContaining(["Cherry", "Blueberry", "Peach"]))
-    expect(letterContainer(letterA.toUpperCase)).toEqual(expect.arrayContaining(["Mango", "Apricot", "Peach"]))
-    expect(letterContainer(letterE.toUpperCase)).toEqual(expect.arrayContaining(["Cherry", "Blueberry", "Peach"]))
+    expect(letterContainer(fruitArray, letterA)).toEqual(["Mango", "Apricot", "Peach"])
+    expect(letterContainer(fruitArray, letterE)).toEqual(["Cherry", "Blueberry", "Peach"])
     })
 })
-// Im not sure whats not working here, the function works fine but when i run yarn jest it tells me that array.filter is not a function. ln 74
+
 
 // b) Create the function that makes the test pass.
 
@@ -75,7 +73,7 @@ const letterContainer = (array, letter) => {
 }
 
 
-// --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a “full house”. A full house is exactly one pair and one three of a kind.
+// --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a "full house". A full house is exactly one pair and one three of a kind.
 
 // a) Create a test with expect statements using the variable provided.
 
@@ -115,3 +113,4 @@ const fullHouse = ( array ) => {
         return false
     }
 }
+

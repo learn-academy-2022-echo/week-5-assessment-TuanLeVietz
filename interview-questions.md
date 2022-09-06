@@ -26,26 +26,26 @@ Researched answer: Ruby on Rails is a server web application framework for build
 
 4. What is a relational database? Are there other kinds of databases?
 
-Your answer: Relational database is the collection that link tables with relationships through their primary keys.  other types of database would be 
+Your answer: Relational database is the collection that links tables with relationships through their primary keys.  other types of database would be 
 
-Researched answer:
+Researched answer: Data is stored in one or more tables within columns and rows. These data has relations between each other and it makes it easier to see and understand how data structures are connected and relate between them.
 
 5. What are primary keys? Why are they important?
 
 Your answer: In PostgreSQL, primary key is the name of the data base where a foreign key can refer to. Primary keys carry out the relationship between two tables in a database. 
 
-Researched answer: Primary keys is the integer column named id of a database. It identifies the database and connects 2 tables. 
+Researched answer: Primary keys are integers in a column that contains unique data that identifies each row in a database table.
 
 ## Looking Ahead: Terms for Next Week
 
 Research and define the following terms to the best of your ability.
 
-1. RESTful routes:
+1. RESTful routes: Is a route that maps HTTP actions(such as get, post, put, delete, patch) to the CRUD actions and creates efficient reusable routes.
 
-2. JSON:
+2. JSON:JavaScript Object Notation is a data format that can be used to send and receive data.
 
-3. ERB:
+3. ERB:Embedded Ruby is a feature that enables the generation of text from templates. These templates combine plain text with Ruby code which are easy to write and maintain. 
 
-4. Params:
+4. Params: Params are parameters that are being passed to the controller via GET or POST requests.
 
-5. API:
+5. API: An application programming interface supplies a set of classes, properties and methods that is used for building a software app that is used to build more software on top of it. 

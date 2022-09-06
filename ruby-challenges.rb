@@ -26,7 +26,7 @@ p contain_letter(beverages_array, letter_t)
 us_states = { northwest: ['Washington', 'Oregon', 'Idaho'], southwest: ['California', 'Arizona', 'Nevada'], northeast: ['Maine', 'New Hampshire', 'Vermont'] }
 # Expected output: ['Arizona', 'California', 'Idaho', 'Maine', 'Nevada', 'New Hampshire', 'Oregon', 'Vermont', 'Washington'] 
 
-# We define a method called one_array and pass in states as its argument. Using to_a we convert the has into an array and using.flatten we get rid of the nested arrays, returning everything in one arrya. We then delete the regions so that we are left with an array containing only states. Last line will be array.sort which will sort out the array in alphabetical order. Ruby is nice so we are nice. 
+# We define a method called one_array and pass in states as its argument. Using to_a we convert the has into an array and using.flatten we get rid of the nested arrays, returning everything in one arrya. We then delete the regions so that we are left with an array containing only states. Last line will be array.sort which will sort out the array in alphabetical order. Ruby is nice so i'll be nice. 
 def one_array states
     array = states.to_a.flatten!
     array.delete(:northwest)
@@ -44,6 +44,7 @@ p one_array(us_states)
 
 # Pseudocode: a)we create a class called Bike and initialize it with model, wheels and current speed. Wheels is gonna be set to 2.We create a method bike_info thats gonna print a sentence containing all the data from the bike object. We then create a new object based on this class and named it ghost, after that we print ghost.bike_info.
 # b)We create 2 more methods one called current speed and set the current speed to += so that it increases trhe speed by the given amount. And a method called brake that is gonna decrease the method by the given amount -=.Current speed cannot be negative so were gonna have it to stop at zero by including an enumerator operator set to 0.
+
 class Bike 
     attr_accessor :model, :wheels, :current_speed
     def initialize model, wheels, current_speed
@@ -52,14 +53,13 @@ class Bike
         @current_speed = current_speed
     end 
     def bike_info
-        p "The #{model} bike is so fast with its #{wheels} wheels that when it's going #{current_speed} mph, it leaves a trail of fire!"
+        p "The #{model}'s bike is so fast with its #{wheels} burning wheels that when it's going #{current_speed} mph, it leaves a trail of fire!"
     end
     def pedal_faster current_speed
         @current_speed += current_speed
     end
     def brake current_speed
         @current_speed -= current_speed
-        # enumerator operator
         [@current_speed, 0].max 
     end
 end
